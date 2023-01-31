@@ -12,7 +12,10 @@ html {
     color: #191919;
 }
 
-
+a {
+    text-decoration: none;
+    color: #191919;
+}
 
 /* début Maxime */
 
