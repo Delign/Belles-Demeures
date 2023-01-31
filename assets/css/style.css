@@ -1,16 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville:wght@400;700&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 html {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-#navbar ul{
-    display: flex;
 
+
+/* début Maxime */
+
+#navbar {
+    display: flex;
+    
+}#navbar ul{
+    display: flex;
 }
+li {
+    
+}
+/* fin Maxime */
+
+/* début Marine */
+
+/* fin Marine */
+
+
+/* début Flore */
+
+/* fin Flore */
