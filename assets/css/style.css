@@ -9,6 +9,7 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
+    color: #191919;
 }
 
 
@@ -65,7 +66,24 @@ html {
 }
 
 #title-over-video {
-    
+    position: absolute;
+    top: 40%;
+    left: 200px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.belles-demeures {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    margin-left: 0.5rem;
 }
 
 /* fin Maxime */
