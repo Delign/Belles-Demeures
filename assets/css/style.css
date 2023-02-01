@@ -20,7 +20,14 @@ html {
 
 a {
     text-decoration: none;
-    color: rgb(54, 54, 54);
+    color: #1A1A1A;
+}
+
+a:hover {
+    transition-duration: 0.5s;
+    font-weight: bolder;
+    transition-property: color;
+    color: #D35959;
 }
 
 h1 {
@@ -35,9 +42,11 @@ h3 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    font-family: 'Great Vibes', cursive;
+    color: #800000;
 }
 
 
@@ -53,7 +62,7 @@ h2 {
     gap: 1%;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
-    background-color: #ffd9d94b;
+    background-color: #ffffffb7;
     height: 15vh;
 }
 
@@ -110,11 +119,11 @@ h2 {
 
 .button-top {
     appearance: none;
-    background-color: transparent;
-    border: 2px solid #1A1A1A;
+    background-color: #ffffff62;
+    border: 2px solid #800000;
     border-radius: 15px;
     box-sizing: border-box;
-    color: #1A1A1A;
+    color: #800000;
     cursor: pointer;
     display: inline-block;
     font-size: 16px;
@@ -140,8 +149,9 @@ h2 {
   
   .button-top:hover {
     color: #fff;
+    border: none;
     background-color: #1A1A1A;
-    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    box-shadow: #00000040 0 8px 15px;
     transform: translateY(-2px);
   }
   
@@ -167,7 +177,7 @@ h2 {
   }
   
   #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color: #1A1A1A; /* Add a dark-grey background on hover */
   }
 
 /* #sect-intro-and-value {
@@ -192,7 +202,7 @@ img.chalet {
     text-align: justify;
 }
 
-.our-values h2{
+.our-values h2, #gallery h2 {
     text-align: center;
 }
 
@@ -205,6 +215,14 @@ img.chalet {
     padding: 0 2% 2% 2%;
     text-align: justify;
     font-size: 0.85rem;
+}
+
+#gallery h2 {
+    color: #fff;
+}
+#gallery {
+    padding-top: 1%;
+    background-color: #1A1A1A;
 }
 
 
