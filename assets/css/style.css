@@ -26,6 +26,7 @@ a {
 h1 {
     font-size: 3rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 
 }
 
@@ -176,10 +177,13 @@ img.chalet {
 
 .values-list {
     display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .values-list p {
-    padding: 2%;
+    padding: 0 2% 2% 2%;
     text-align: justify;
+    font-size: 0.85rem;
 }
 
 
