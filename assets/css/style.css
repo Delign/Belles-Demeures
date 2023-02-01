@@ -170,6 +170,19 @@ img.chalet {
     text-align: justify;
 }
 
+.our-values h2{
+    text-align: center;
+}
+
+.values-list {
+    display: flex;
+}
+.values-list p {
+    padding: 2%;
+    text-align: justify;
+}
+
+
 
 /* fin Maxime */
 
