@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville:wght@400;700&display=swap%27');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url(//db.onlinewebfonts.com/c/e8e79179db1d77cb681cc65836ddbacc?family=AlverataInformalW01-Regular);
+
+/* @font-face {font-family: "AlverataInformalW01-Regular"; */
 
 * {
     box-sizing: border-box;
@@ -17,17 +20,33 @@ html {
 
 a {
     text-decoration: none;
-    color: rgb(54, 54, 54);
+    color: #1A1A1A;
+}
+
+a:hover {
+    transition-duration: 0.5s;
+    font-weight: bolder;
+    transition-property: color;
+    color: #D35959;
 }
 
 h1 {
     font-size: 3rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
 
 }
 
-h2 {
+h3 {
     font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Great Vibes', cursive;
+    color: #800000;
 }
 
 
@@ -43,7 +62,7 @@ h2 {
     gap: 1%;
     padding-top: 1rem;
     padding-bottom: 0.5rem;
-    background-color: #ffd9d94b;
+    background-color: #ffffffb7;
     height: 15vh;
 }
 
@@ -96,18 +115,117 @@ h2 {
     display: flex;
     justify-content: space-around;
 }
-.button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
+
+
+.button-top {
+    appearance: none;
+    background-color: #ffffff62;
+    border: 2px solid #800000;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #800000;
+    cursor: pointer;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+  }
+  
+  .button-top:disabled {
+    pointer-events: none;
+  }
+  
+  .button-top:hover {
+    color: #fff;
+    border: none;
+    background-color: #1A1A1A;
+    box-shadow: #00000040 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .button-top:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #800000; /* Set a background color */
+    color: #ffffff; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: #1A1A1A; /* Add a dark-grey background on hover */
+  }
+
+/* #sect-intro-and-value {
+
+} */
+img.chalet {
+    margin-right: 5%;
 }
+.presentation-image {
+    display: flex;
+    padding: 1% 10%;
+}
+
+.presentation-image div {
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.presentation-image p {
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.our-values h2, #gallery h2 {
+    text-align: center;
+}
+
+.values-list {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.values-list p {
+    padding: 0 2% 2% 2%;
+    text-align: justify;
+    font-size: 0.85rem;
+}
+
+#gallery h2 {
+    color: #fff;
+}
+#gallery {
+    padding-top: 1%;
+    background-color: #1A1A1A;
+}
+
+
 
 /* fin Maxime */
 
