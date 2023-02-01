@@ -148,6 +148,32 @@ h2 {
   }
 }
   
+/* form */
+#form { background-color: #dbdbdb; padding-left: 80px; padding-bottom: 50px;}
+
+/* align logo plane */
+#form i {
+  vertical-align: middle;
+}
+
+#form h2 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* margin form text */
+
+#form input[type="text"] {
+  margin-bottom: 15px;
+  
+}
+
+#formargin { margin-left: 75px;}
+
+
+
+
+
 
 /* fin Marine */
 
