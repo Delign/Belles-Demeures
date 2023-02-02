@@ -115,7 +115,9 @@ h2 {
     display: flex;
     justify-content: space-around;
 }
-
+.turlututu, .button-over-video{
+    text-align: center;
+}
 
 .button-top {
     appearance: none;
@@ -281,17 +283,26 @@ img.chalet {
 
 /* form */
 #form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: #1A1A1A;
     color: #fff;
     padding: 3%;
 }
 
+#form div:nth-child(2) {
+    flex-basis: 10%;
+}
 
 .fa-paper-plane {
     font-size: 2rem;
     margin-right: 1rem;
 }
 
+#form>div{
+    flex-basis: 35%;
+}
 /* align logo plane */
 #form i {
     vertical-align: middle;
@@ -309,8 +320,13 @@ img.chalet {
 
 }
 
-#formargin {
-    margin-left: 75px;
+form div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-last-name {
+    white-space: nowrap;
 }
 
 
@@ -368,17 +384,46 @@ footer>div {
     text-align: center;
 }
 
-.top-nav-mobile, .pic-top-mobile, .pic-top-tablet {
+.top-nav-mobile, .mobile, .tablet, #title-over-video img:first-child {
     display: none;
 }
+
+/* .card {
+    width: 300px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #00000080;
+    overflow: hidden;
+    margin: 5%; 
+    padding: 1%;
+    display: inline-block;
+    position: absolute;
+    top: 1000px;
+    left: 500px;
+  } */
 
 /* fin Flore */
 
 @media screen and (max-width: 768px) {
 
-    #navbar, video, .button-over-video a:nth-child(2), .chalet {
+    #navbar, video, .button-over-video a:nth-child(2), .chalet, #title-over-video h3, #top-video {
         display: none;
     }
+    #title-over-video img:first-child {
+        display: block;
+    }
+
+    #title-over-video {
+        position: block;
+        top: 20%;
+    }
+
+    .button-over-video {
+        margin-top: 75%;
+        margin-left: -50px;
+        display: block;
+    }
+
     a {
         color: #fff;
     }
@@ -396,19 +441,36 @@ footer>div {
         font-family: 'Great Vibes', cursive;
         color: #800000;
     }
-    .pic-top-mobile {
-        display: block;
-        width: 100%;
+
+    p{
+        font-size: 14px;
+        text-align: initial;
+        margin: 1% 0%;
     }
 
-    #title-over-video {
-        margin: 0;
-        padding: 0;
+    .values-list {
+        margin: 5%;
         display: block;
     }
+
+    .pic-top-mobile {
+        position: absolute;
+        display: block;
+        width: 100%;
+        /* z-index: -1; */
+    }
+
+    #top-screen-mobile {
+        height: 95vh;
+        background: linear-gradient(#8000004e, #ffffff00);
+    }
+
+
 
 
     .top-nav-mobile {
+        position: sticky;
+        z-index: 99;       
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -416,9 +478,8 @@ footer>div {
         background: linear-gradient(90deg, #020024 0%, #800000 35%, #ffa5a5 100%);
         /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         color: #FFF;
-        height: 50px;
-        padding: 1em;
-        position: sticky;
+        height: 10px;
+        padding: 2em;
         top:0px;
     }
 
@@ -535,6 +596,42 @@ footer>div {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
+    }
+
+    #form {
+        padding: 10%;
+    }
+
+    #form, form div{
+        display: block;
+    }
+    .button-form {
+        background-color: #800000; /* Green */
+        border: 2px solid ;
+        border-radius: 15px;
+        color: white;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        margin-left: 180px;
+      }
+
+    #email, #message {
+        width: 100% !important;
+    }
+
+    footer>div {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        height: 150px;
+    }
+    .div-footer-social {
+        display: flex;
     }
 }
 
