@@ -238,10 +238,10 @@ img.chalet {
     font-size: 0.85rem;
 }
 
-/* ----------------------------PC : nos valeurs--------------------- */
+/* ----------------------------PC : gallery--------------------- */
 
 #gallery {
-    padding-top: 1%;
+    padding: 1%;
     background-color: #1A1A1A;
 }
 #gallery h2 {
