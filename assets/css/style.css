@@ -635,9 +635,3 @@ footer>div {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    .pic-top-tablet {
-        display: block;
-        width: 100%;
-    } 
-}
