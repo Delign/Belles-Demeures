@@ -5,21 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="belles-demeures" content="Créateur de maisons de luxe préfabriquées">
+    <meta name="description"
+        content="La conception de maisons préfabriquées, sublimes, de luxe sur mesure avec une attention particulière à l'isolation basse
+    consommation moderne et à l'intérêt pour l'environnement et l'écologie. Construire sa maison atypique et d'exception au naturel.">
     <!-- Ajout de la bibliothèque FontAwsome -->
-    <script src="https://kit.fontawesome.com/b275317729.js" crossorigin="anonymous"></script>
+
     <!-- ajout du favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/img/logo-grande-taille copie.png">
+    <link rel="icon" type="image/x-icon" href="assets/img/Fichier_7.png">
     <title>Belles Demeures</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <!-- début Maxime -->
+    <!------------------------------------ bouton back to top------------------------------------->
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+    <!------------------------------------ Side bar mobile------------------------------------------>
+    <section class="top-nav-mobile">
+        <div>
+            <img src="assets/img/Fichier_7.png" alt="logo mini" width="30px">
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li><a href="#navbar">Accueil</a></li>
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="#gallery">Nos réalisations</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#form">Contact</a></li>
+        </ul>
+    </section>
+    <section id="top-screen-mobile">
+        <img src="assets/img/roberto-nickson-so3wgJLwDxo-unsplash.jpg" alt="image mobile" class="pic-top-mobile mobile"
+            height="85%">
+        <img src="assets/img/r-architecture-wDDfbanbhl8-unsplash.jpg" alt="image tab" class="pic-top-tablet tablet">
+    </section>
+    <!------------------------------------ navbar pc------------------------------------------>
     <nav id="navbar" role="navigation">
         <ul id="menu">
             <li>
-                <a href="#navbar"><p>Accueil</p></a>
+                <a href="#navbar">
+                    <p>Accueil</p>
+                </a>
             </li>
             <li>
                 <a href="#presentation">
@@ -28,40 +57,47 @@
 
             </li>
             <li>
-                <a href="#gallery"><p>Nos réalisations</p></a>
+                <a href="#gallery">
+                    <p>Nos réalisations</p>
+                </a>
             </li>
             <li>
                 <a href="#">
                     <p>Blog</p>
                 </a>
             <li>
-                <a href="#contact"><p>Contact</p></a>
+                <a href="#form">
+                    <p>Contact</p>
+                </a>
             </li>
             </li>
         </ul>
-        <div><img src="assets/img/Belles-demeures- grandeTaille copie.png" alt="logo grande taille Belles demeures"
-                class="nav-logo" width="100%"></div>
+        <div>
+            <img src="assets/img/Fichier_12.png" alt="logo grande taille Belles demeures" class="nav-logo" width="100%">
+        </div>
         <div id="nav-social">
             <a href="#"><i class="fa-brands fa-linkedin" id="fa-social"></i></a>
             <a href="#"><i class="fa-brands fa-instagram" id="fa-social"></i></a>
             <a href="#"><i class="fa-brands fa-facebook" id="fa-social"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest" id="fa-social"></i></a>
         </div>
     </nav>
-
+<!------------------------------------ section video ------------------------------------------>
     <section id="top-video">
         <video src="assets/video/video_top_asm.mp4" autoplay muted loop class="video-clip" width="100%"></video>
     </section>
-
+<!------------------------------------ titre sur video ------------------------------------------>
     <section id="title-over-video">
+        <img src="assets/img/Fichier_15.png" alt="logo blanc" width="66%">
         <h3>Bienvenue sur <span class="belles-demeures">Belles Demeures</span></h3>
         <h1>Créateur de maisons de luxe préfabriquées</h1>
         <div class="button-over-video">
-            <a href="#" class="button-top">Nous Contacter</a>
+            <a href="#form" class="button-top">Nous Contacter</a>
             <a href="#" class="button-top">Le Blog</a>
         </div>
 
     </section>
-    
+
 
     <!-- texte de présentation -->
     <section id="sect-intro-and-value">
@@ -77,7 +113,7 @@
                     envers les
                     détails et la satisfaction totale de nos clients.
                 </p>
-                <p>totootot</p>
+
 
                 <h2>Les services proposés par notre agence</h2>
                 <p>
@@ -95,7 +131,7 @@
                     Le service après-vente pour garantir la durabilité et l'efficacité énergétique de la maison sur le
                     long terme
                 </p>
-                <a href="#" class="button-top">En savoir plus</a>
+                <div class="turlututu"><a href="#my-super-card" class="button-top">En savoir plus</a></div>
             </div>
         </div>
         <div class="our-values">
@@ -130,9 +166,24 @@
                 </p>
             </div>
         </div>
-
-                <p>tototot</p>
     </section>
+
+    <!-- card -->
+    <!-- <section id="my-super-card">
+        <div class="card">
+
+            <h2>Nos constructions</h2>
+            <p class="P">Sur plan, vous pourrez choisir de conserver nos structures préétablies avec nos architectes ou
+                de les modifier selon vos goûts.
+
+                Vous pourrez sélectionner les matériaux qui s’adapteront le mieux à votre confort et vos aspirations.
+
+                Quelque soient vos choix, nos architectes accompagneront votre projet jusqu'à la remise des clés.
+
+                Pour prendre rendez vous et en parler avec nos équipes, n’hésitez pas à nous joindre via le formulaire
+                contact qui se situe en bas de page.</p>
+        </div>
+    </section> -->
 
 
     <!-- fin Maxime -->
@@ -181,7 +232,8 @@
             <div class="column">
 
                 <img src="assets/img/roberto-nickson-so3wgJLwDxo-unsplash.jpg"
-                    alt="Vue depuis la terasse de la piscine vers la villa et un paysage drocailleux. C'est le crépuscule et le bois ressort avec des tons chauds.">
+                    alt="Vue depuis la terasse de la piscine vers la villa et un paysage drocailleux. C'est le crépuscule et le bois ressort avec des tons chauds."
+                    class="chalet">
                 <img src="assets/img/vibeke-vollelv-holck-xPuXOciUPVQ-unsplash.jpg"
                     alt="vue raprochée sur un vase beige posé sur une console en bois contre un mur. Des fleures séchées sont dans le vas et une affiche est encoadrée sur le mur.">
                 <img src="assets/img/ralph-ravi-kayden-MyeOnGcibCQ-unsplash.jpg"
@@ -195,19 +247,28 @@
     <!-- form -->
 
     <section id="form">
-        <i class="fa-regular fa-paper-plane"></i>
-        <h2>Contactez-nous</h2>
-        <form action="/action_page.php" target="_blank" method="post"><br>
-            <label for="fname">Votre prénom</label>
-            <input type="text" id="fname" name="fname">
-            <label id="formargin" for="lname">Votre nom</label>
-            <input type="text" id="lname" name="lname"><br>
-            <label for="email">Votre adresse email</label><br>
-            <input type="text" id="email" name="email" style="width:600px;"><br>
-            <label for="message">Votre message</label><br>
-            <input type="text" id="message" name="message" style="width:600px; height:100px;"><br>
-            <input type="submit" value="Envoyer">
-        </form>
+        <div>
+            <i class="fa-regular fa-paper-plane"></i>
+            <h2>Contactez-nous</h2>
+            <form action="/action_page.php" target="_blank" method="post">
+                <div>
+                    <div class="name-last-name">
+                        <label for="fname">Votre prénom :</label>
+                        <input type="text" id="fname" name="fname">
+                    </div>
+                    <div class="name-last-name">
+                        <label id="formargin" for="lname">Votre nom :</label>
+                        <input type="text" id="lname" name="lname">
+                    </div>
+                </div>
+                <label for="email">Votre adresse email</label>
+                <input type="text" id="email" name="email" style="width:600px;">
+                <label for="message">Votre message</label>
+                <input type="text" id="message" name="message" style="width:600px; height:100px;">
+                <div><input type="submit" value="Envoyer" class="button-form"></div>
+            </form>
+        </div>
+        <div><img src="assets/img/Fichier_7.png" alt="logo de Belles Demeures" width="100%" class="chalet"></div>
     </section>
 
 
@@ -215,25 +276,35 @@
 
     <!-- début Flore -->
     <footer>
-        <img src="assets/img/maps-screenshot.png" alt="carte de localisation du magasin"
-            width="30%">
+        <img src="assets/img/maps-screenshot.png" alt="carte de localisation du magasin" width="30%" class="chalet">
         <div>
-            <img src="assets/img/Fichier_7.png" alt="logo de Belles Demeures" width="10%" class="logo-footer">
+            <img src="assets/img/Fichier_15.png" alt="logo de Belles Demeures" width="80%" class="logo-footer">
             <ul class="list-footer">
                 <li>
-                    <a href="#"><p>Mentions légales</p></a>
+                    <a href="#">
+                        <a href="https://www.economie.gouv.fr/entreprises/site-internet-mentions-obligatoires"
+                            target="_blank">
+                            <p>Mentions légales</p>
+                        </a>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><p>Conditions de vente</p></a>
+                    <a href="#">
+                        <p>CGV</p>
+                    </a>
                 </li>
                 <li>
-                    <a href="#"><p>A propos</p></a>
+                    <a href="#">
+                        <p>RGPD</p>
+                    </a>
                 </li>
             </ul>
             <div class="div-footer-social">
-            <a href="#"><i class="fa-brands fa-facebook footer-social"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube footer-social"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram footer-social"></i></a></div>
+                <a href="#"><i class="fa-brands fa-facebook footer-social"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube footer-social"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram footer-social"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest footer-social"></i></a>
+            </div>
         </div>
 
 
@@ -253,30 +324,33 @@
     <!-- fin Maxime -->
     <!-- début Marine -->
 
-        <!-- fin Marine -->
+    <!-- fin Marine -->
 
-        <!-- début Flore -->
-        <!-- fin Flore -->
+    <!-- début Flore -->
+    <!-- fin Flore -->
 
-        <script>// Get the button:
-            let mybutton = document.getElementById("myBtn");
-            
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {scrollFunction()};
-            
-            function scrollFunction() {
-              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    <script>// Get the button:
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 mybutton.style.display = "block";
-              } else {
+            } else {
                 mybutton.style.display = "none";
-              }
             }
-            
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-              document.body.scrollTop = 0; // For Safari
-              document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-            } </script>
+        }
+
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        } 
+    </script>
+    <script src="https://kit.fontawesome.com/b275317729.js" crossorigin="anonymous"></script>
 
 
 

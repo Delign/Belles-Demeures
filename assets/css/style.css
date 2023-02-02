@@ -15,9 +15,6 @@ html {
 }
 
 
-
-/* début Maxime */
-
 a {
     text-decoration: none;
     color: #1A1A1A;
@@ -49,13 +46,13 @@ h2 {
     color: #800000;
 }
 
-
+/* Bienvenue sur Belles demeures */
 .belles-demeures {
     font-family: 'Great Vibes', cursive;
     margin-left: 1rem;
     font-size: 3rem;
 }
-
+/* ----------------------------Section navbar--------------------- */
 #navbar {
     display: grid;
     grid-template-columns: 40% 20% 40%;
@@ -66,7 +63,6 @@ h2 {
     height: 15vh;
 }
 
-
 #menu {
     display: flex;
     justify-content: space-evenly;
@@ -74,8 +70,6 @@ h2 {
     margin-top: auto;
     margin-bottom: auto;
 }
-
-
 
 .nav-logo {
     display: inline-block;
@@ -115,7 +109,9 @@ h2 {
     display: flex;
     justify-content: space-around;
 }
-
+.turlututu, .button-over-video{
+    text-align: center;
+}
 
 .button-top {
     appearance: none;
@@ -234,7 +230,8 @@ img.chalet {
     font-size: 0.85rem;
 }
 
-#gallery h2, #form h2 {
+#gallery h2,
+#form h2 {
     color: #fff;
 }
 
@@ -280,17 +277,26 @@ img.chalet {
 
 /* form */
 #form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: #1A1A1A;
     color: #fff;
     padding: 3%;
 }
 
+#form div:nth-child(2) {
+    flex-basis: 10%;
+}
 
 .fa-paper-plane {
     font-size: 2rem;
     margin-right: 1rem;
 }
 
+#form>div{
+    flex-basis: 35%;
+}
 /* align logo plane */
 #form i {
     vertical-align: middle;
@@ -308,8 +314,13 @@ img.chalet {
 
 }
 
-#formargin {
-    margin-left: 75px;
+form div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-last-name {
+    white-space: nowrap;
 }
 
 
@@ -367,12 +378,254 @@ footer>div {
     text-align: center;
 }
 
+.top-nav-mobile, .mobile, .tablet, #title-over-video img:first-child {
+    display: none;
+}
+
+/* .card {
+    width: 300px;
+    height: 450px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #00000080;
+    overflow: hidden;
+    margin: 5%; 
+    padding: 1%;
+    display: inline-block;
+    position: absolute;
+    top: 1000px;
+    left: 500px;
+  } */
+
 /* fin Flore */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+
+    #navbar, video, .button-over-video a:nth-child(2), .chalet, #title-over-video h3, #top-video {
+        display: none;
+    }
+    #title-over-video img:first-child {
+        display: block;
+    }
+
+    #title-over-video {
+        position: block;
+        top: 20%;
+    }
+
+    .button-over-video {
+        margin-top: 75%;
+        margin-left: -50px;
+        display: block;
+    }
+
+    a {
+        color: #fff;
+    }
+    h1 {
+        color: #fff;
+        font-size: 2rem;    
+    }
+    
+    h3 {
+        font-size: 1.5rem;
+        color: #fff; 
+    }
+    
+    h2 {
+        font-family: 'Great Vibes', cursive;
+        color: #800000;
+    }
+
+    p{
+        font-size: 14px;
+        text-align: initial;
+        margin: 1% 0%;
+    }
+
+    .values-list {
+        margin: 5%;
+        display: block;
+    }
+
+    .pic-top-mobile {
+        position: absolute;
+        display: block;
+        width: 100%;
+        /* z-index: -1; */
+    }
+
+    #top-screen-mobile {
+        height: 95vh;
+        background: linear-gradient(#8000004e, #ffffff00);
+    }
+
+
+
+
+    .top-nav-mobile {
+        position: sticky;
+        z-index: 99;       
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background: linear-gradient(90deg, #020024 0%, #800000 35%, #ffa5a5 100%);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        color: #FFF;
+        height: 10px;
+        padding: 2em;
+        top:0px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu>li {
+        margin: 0 1rem;
+        overflow: hidden;
+    }
+
+    .menu-button-container {
+        display: none;
+        height: 100%;
+        width: 30px;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .menu-button,
+    .menu-button::before,
+    .menu-button::after {
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        height: 4px;
+        width: 30px;
+        transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        border-radius: 2px;
+    }
+
+    .menu-button::before {
+        content: '';
+        margin-top: -8px;
+    }
+
+    .menu-button::after {
+        content: '';
+        margin-top: 8px;
+    }
+
+    #menu-toggle:checked+.menu-button-container .menu-button::before {
+        margin-top: 0px;
+        transform: rotate(405deg);
+    }
+
+    #menu-toggle:checked+.menu-button-container .menu-button {
+        background: rgba(255, 255, 255, 0);
+    }
+
+    #menu-toggle:checked+.menu-button-container .menu-button::after {
+        margin-top: 0px;
+        transform: rotate(-405deg);
+    }
+
+
+    .menu-button-container {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 50px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #menu-toggle~.menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    #menu-toggle:checked~.menu li {
+        border: 1px solid #333;
+        height: 2.5em;
+        padding: 0.5em;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .menu>li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: white;
+        background-color: #222;
+    }
+
+    .menu>li:not(:last-child) {
+        border-bottom: 1px solid #444;
+    }
+
+
     .column {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
     }
+
+    #form {
+        padding: 10%;
+    }
+
+    #form, form div{
+        display: block;
+    }
+    .button-form {
+        background-color: #800000; /* Green */
+        border: 2px solid ;
+        border-radius: 15px;
+        color: white;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        margin-left: 180px;
+      }
+
+    #email, #message {
+        width: 100% !important;
+    }
+
+    footer>div {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        height: 150px;
+    }
+    .div-footer-social {
+        display: flex;
+    }
 }
+
