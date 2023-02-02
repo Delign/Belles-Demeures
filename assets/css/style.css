@@ -15,9 +15,6 @@ html {
 }
 
 
-
-/* début Maxime */
-
 a {
     text-decoration: none;
     color: #1A1A1A;
@@ -49,13 +46,13 @@ h2 {
     color: #800000;
 }
 
-
+/* Bienvenue sur Belles demeures */
 .belles-demeures {
     font-family: 'Great Vibes', cursive;
     margin-left: 1rem;
     font-size: 3rem;
 }
-
+/* ----------------------------Section navbar--------------------- */
 #navbar {
     display: grid;
     grid-template-columns: 40% 20% 40%;
@@ -66,7 +63,6 @@ h2 {
     height: 15vh;
 }
 
-
 #menu {
     display: flex;
     justify-content: space-evenly;
@@ -74,8 +70,6 @@ h2 {
     margin-top: auto;
     margin-bottom: auto;
 }
-
-
 
 .nav-logo {
     display: inline-block;
@@ -635,9 +629,3 @@ footer>div {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    .pic-top-tablet {
-        display: block;
-        width: 100%;
-    } 
-}
