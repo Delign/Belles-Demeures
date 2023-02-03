@@ -383,8 +383,8 @@ footer>div {
     text-align: center;
 }
 
-footer>img {
-    width: 30%;
+footer img:first-child {
+    width: 90%;
 }
 
 footer .logo-footer {
