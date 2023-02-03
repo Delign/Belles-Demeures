@@ -127,6 +127,7 @@ h2 {
 
 #top-video {
     background: linear-gradient(#8000004e, #ffffff00);
+    background-color: #ffffff33;
     height: 115vh;
     z-index: 0;
 }
